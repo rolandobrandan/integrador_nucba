@@ -1,0 +1,185 @@
+/* TODO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(204, 28, 28);
+    /* background-image:url("/infaltables-en-una-buena-parrillada-idnoticia_449-w700-h400-m1.png") ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: 'Krub', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    /* border: solid blue; */
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8D1C18;
+
+}
+
+.logo{
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* NAVBAR */
+
+
+.ul__list{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+.link__list{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+/* ---SECTION HERO--- */
+
+.section__hero{
+    background-image: url("https://www.cronista.com/files/image/454/454147/623e273243ec4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid blue; */
+    height: 700px;
+    font-size:xx-large;
+    margin-top: 80px;
+}
+
+/* ---SECTION ABOUT--- */
+
+.section__about{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px 0 20px;
+    height: 500px;
+}
+.section__about h2{
+    font-size: 32px;
+}
+
+
+/* ---SECTION CARDS--- */
+
+.section__cards{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 0px;
+}
+.section__cards h2{
+    font-size: 32px;
+}
+.cards__container{
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
+.card{
+    /* display: flex; */
+    width: 300px;
+    height: 430px;
+    gap: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px color(srgb red green blue);
+    background-color: rgb(126, 40, 40);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.2;
+    text-align: center;
+    padding: 30px;
+    align-items: center;
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.6);
+}
+.card img{
+    width: 250px;
+    border-radius: 20px;
+    
+}
+.card h3{
+    font-weight: 600;
+}
+.card p{
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0px 16px;
+
+}
+
+/* SECTION CONTACTO */
+
+.section__contacto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 20px;
+    margin: 50px 0 50px 0;
+}
+.section__contacto h2{
+    font-size: 32px;
+}
+.contacto__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.horarios__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+footer{
+    background-color: white;
+    color: black;
+}
+footer span{
+    color: black;
+}
