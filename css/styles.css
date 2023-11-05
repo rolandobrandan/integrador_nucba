@@ -212,10 +212,6 @@ footer span{
     .navbar i{
         display: block;
     }
-
-    #toggle-menu:checked ~ .navbar-list {
-        display: flex;
-    }
    
 }
 
@@ -237,25 +233,21 @@ footer span{
     
 
     /* ---SECCION 2 ABOUT--- */
-    #about{
+    #section__about{
         font-size: 15px;
     }
 
     /* ---SECCION 3 CARDS--- */
 
-    #cards-section{
+    #section__cards{
         align-items: center;
         text-align: center;
         max-width: 80%;
     }
 
-    .description-section-3{
-        text-align: center;
-        align-items: center;
-        width: 80%;
-    }
+   
 
-    .card-container{
+    .cards__container{
         align-items: center;
         justify-content: center;
         text-align: center;
