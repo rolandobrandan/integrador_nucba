@@ -31,7 +31,9 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #8D1C18;
-
+    top: 0;
+    z-index: 1;
+    position: fixed;
 }
 
 .logo{
@@ -57,8 +59,8 @@ header{
 
 /* ---SECTION HERO--- */
 
-.section__hero{
-    background-image: url("https://www.cronista.com/files/image/454/454147/623e273243ec4.jpg");
+#section__hero{
+    background-image: url("https://www.tresjotas.com/wp-content/uploads/2018/03/saber-termino-de-la-carne.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -69,11 +71,13 @@ header{
     height: 700px;
     font-size:xx-large;
     margin-top: 80px;
+    height: 500px;
 }
+
 
 /* ---SECTION ABOUT--- */
 
-.section__about{
+#section__about{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -85,13 +89,13 @@ header{
     height: 500px;
 }
 .section__about h2{
-    font-size: 32px;
+    font-size: 40px;
 }
 
 
 /* ---SECTION CARDS--- */
 
-.section__cards{
+#section__cards{
     display: flex;
     align-items: center;
     width: 90%;
@@ -99,8 +103,8 @@ header{
     gap: 40px;
     padding: 70px 0px;
 }
-.section__cards h2{
-    font-size: 32px;
+#section__cards h2{
+    font-size: 40px;
 }
 .cards__container{
     display:flex;
@@ -116,7 +120,7 @@ header{
     gap: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px color(srgb red green blue);
-    background-color: rgb(126, 40, 40);
+    background-color: #8D1C18;
     overflow: hidden;
     margin: 20px;
     transition: all 0.2;
@@ -145,7 +149,7 @@ header{
 
 /* SECTION CONTACTO */
 
-.section__contacto{
+#section__contacto{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -156,8 +160,8 @@ header{
     font-size: 20px;
     margin: 50px 0 50px 0;
 }
-.section__contacto h2{
-    font-size: 32px;
+#section__contacto h2{
+    font-size: 40px;
 }
 .contacto__container{
     display: flex;
@@ -182,4 +186,89 @@ footer{
 }
 footer span{
     color: black;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+/* MEDIA QUERIES CELULAR */
+
+@media (max-width:576px )  {
+
+    .navbar ul{
+        background-color: rgb(75, 68, 68);
+        width: 100%;
+        height: calc(100vh - 80px); /*El 100% del viewportHigh, menos los 80px del header*/
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+    }
+   
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media (max-width:992px) {
+
+    #section__hero{
+        text-align: center;
+        width: 90%;
+        align-items: center;
+        background-color: #8D1C18;
+    }
+
+    #section__hero h1{
+        display: block;
+        width: 100%;
+    }
+    
+
+    /* ---SECCION 2 ABOUT--- */
+    #about{
+        font-size: 15px;
+    }
+
+    /* ---SECCION 3 CARDS--- */
+
+    #cards-section{
+        align-items: center;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .description-section-3{
+        text-align: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .card-container{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .card{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+        position: sticky;
+
+    }
+
 }
