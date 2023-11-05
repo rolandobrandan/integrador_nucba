@@ -223,7 +223,7 @@ footer span{
         text-align: center;
         width: 90%;
         align-items: center;
-        background-color: #8D1C18;
+        /* background-color: #8D1C18; */
     }
 
     #section__hero h1{
@@ -262,5 +262,6 @@ footer span{
         position: sticky;
 
     }
+
 
 }
